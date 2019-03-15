@@ -1,5 +1,7 @@
 package javaUtil.exam;
 
+import java.util.Calendar;
+
 public class StudyUtil {
 	
 	//java.util은 거의 두번째 로 많이 사용하는 것.
@@ -28,10 +30,18 @@ public class StudyUtil {
 	
 	// 밑에는 Arraylist, hashSet, hashMap 등이 있다.
 	
+	public static void main(String[] args) {
+		
+	Calendar cd = Calendar.getInstance();
 	
 	
 	
+	cd.add(Calendar.DATE, 100);
 	
+	System.out.println(cd.get(Calendar.YEAR) +"년" + (cd.get(Calendar.MONTH)+1) + "월" +cd.get(Calendar.DAY_OF_MONTH)+"일");
+	
+	
+	}
 	
 	
 }
